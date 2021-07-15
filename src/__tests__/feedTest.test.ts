@@ -14,8 +14,30 @@ const hippoFood = ["grass", "reeds", "shoots"];
 const badFood = ["shrimp", "potatoes", "pizza", "icecream"];
 
 describe("feeding animals", () => {
-  test("Alex likes the food we expect", () => {});
-  test("Marty likes the food we expect", () => {});
-  test("Melman likes the food we expect", () => {});
-  test("Gloria likes the food we expect", () => {});
+  test("Alex likes the food we expect", () => {
+    lionFood.forEach((food) => {
+      console.log(alex.feed(food))
+    })
+    // console.log(alex.feed(lionFood[0]))
+    // console.log(alex.feed(badFood[0]))
+  });
+  test("Marty likes the food we expect", () => {
+    zebraFood.forEach((food) => {
+      console.log(marty.feed(food))
+    })
+  });
+  test("Melman likes the food we expect", () => {
+    giraffeFood.forEach((food) => {
+      console.log(melman.feed(food))
+    })
+  });
+  test("Gloria likes the food we expect", () => {
+    hippoFood.forEach((food) => {
+      console.log(gloria.feed(food))
+    })
+  });
 });
+
+// console.log(alex.feed("meat"));
+// console.log(alex.feed("shrimp"));
+
