@@ -1,4 +1,7 @@
 export class Animal {
+  forEach(arg0: (food: any) => void) {
+    throw new Error("Method not implemented.");
+  }
   name: string;
   type: string;
   preferredFoods: Array<string>;
@@ -13,3 +16,4 @@ export class Animal {
     else return `${this.name} the ${this.type} does not like ${food}!`;
   }
 }
+

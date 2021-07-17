@@ -56,7 +56,7 @@ describe("feeding animals", () => {
       console.log(gloria.feed(food))
     })
   });
-
+  
 });
 
 
