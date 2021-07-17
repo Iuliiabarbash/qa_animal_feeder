@@ -16,44 +16,56 @@ const badFood = ["shrimp", "potatoes", "pizza", "icecream"];
 describe("feeding animals", () => {
   test("Alex likes the food we expect", () => {
     lionFood.forEach((food) => {
-      console.log(alex.feed(food))
+      let likeFood = alex.feed(food)
+      expect(likeFood).toContain('like')
+      // console.log(alex.feed(food))
     })
     // console.log(alex.feed(lionFood[0]))
     // console.log(alex.feed(badFood[0]))
   });
   test("Marty likes the food we expect", () => {
     zebraFood.forEach((food) => {
-      console.log(marty.feed(food))
+    let likeFood = marty.feed(food)
+    expect(likeFood).toContain('like')
     })
   });
   test("Melman likes the food we expect", () => {
     giraffeFood.forEach((food) => {
-      console.log(melman.feed(food))
+    let likeFood = melman.feed(food)
+    expect(likeFood).toContain('like')
     })
   });
   test("Gloria likes the food we expect", () => {
     hippoFood.forEach((food) => {
-      console.log(gloria.feed(food))
+    let likeFood = gloria.feed(food)
+    expect(likeFood).toContain('like')
     })
   });
-  test('Alex does not like:', () => {
+  test('Alex does not like we expect:', () => {
     badFood.forEach((food) => {
-      console.log(alex.feed(food))
+      let bFood = alex.feed(food)
+      expect(bFood).toContain('does not like')
+    
     })
   });
   test("Marty does not like", () => {
     badFood.forEach((food) => {
-      console.log(marty.feed(food))
+      let bFood = marty.feed(food)
+      expect(bFood).toContain('does not like')
+    
     })
   });
-  test('Melman bad food', () => {
+  test('Melman does not like', () => {
     badFood.forEach((food) => {
-      console.log(melman.feed(food))
+      let bFood = melman.feed(food)
+      expect(bFood).toContain('does not like')
+
     })
   });
-  test('Glorias bad food', () => {
+  test('Glorias does not like we expect', () => {
     badFood.forEach((food) => {
-      console.log(gloria.feed(food))
+      let bFood = gloria.feed(food)
+      expect(bFood).toContain("does not like")
     })
   });
   
