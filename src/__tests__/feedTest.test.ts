@@ -36,7 +36,29 @@ describe("feeding animals", () => {
       console.log(gloria.feed(food))
     })
   });
+  test('Alex does not like:', () => {
+    badFood.forEach((food) => {
+      console.log(alex.feed(food))
+    })
+  });
+  test("Marty does not like", () => {
+    badFood.forEach((food) => {
+      console.log(marty.feed(food))
+    })
+  });
+  test('Melman bad food', () => {
+    badFood.forEach((food) => {
+      console.log(melman.feed(food))
+    })
+  });
+  test('Glorias bad food', () => {
+    badFood.forEach((food) => {
+      console.log(gloria.feed(food))
+    })
+  });
+
 });
+
 
 // console.log(alex.feed("meat"));
 // console.log(alex.feed("shrimp"));
